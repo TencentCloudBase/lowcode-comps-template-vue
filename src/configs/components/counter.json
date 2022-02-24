@@ -1,0 +1,33 @@
+{
+    "$schema": "https://comp-public-1303824488.cos.ap-shanghai.myqcloud.com/schema/lcds_component.json",
+    "data": {
+      "properties": {
+        "init": {
+            "title": "初始数值",
+            "type": "number",
+            "default": 0
+        },
+        "innerSlot": {
+          "title": "测试插槽",
+          "type": "slot"
+        }
+    }
+    },
+    "events": [
+      {
+        "name": "add",
+        "title": "加事件触发"
+      },
+      {
+        "name": "minus",
+        "title": "减事件触发"
+      }
+    ],
+    "meta": {
+      "title": "Vue Counter",
+      "category": "布局容器",
+      "description": "Vue 测试",
+      "icon": "//imgcache.qq.com/qcloud/lowcode/static/ide/left-material-icon/Container.svg"
+    }
+  }
+  

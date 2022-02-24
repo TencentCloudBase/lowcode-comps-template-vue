@@ -1,0 +1,8 @@
+<div id="{{id}}" style="{{styles}}" class="{{className}}">
+  <div class="counter-row">
+    <button class="counter-button" bind:tap="minus">-</button>
+      <span class="counter-num">{{count}}</span>
+    <button class="counter-button" bind:tap="add">+</button>
+  </div>
+    <slot name="innerSlot"></slot>
+</div>
