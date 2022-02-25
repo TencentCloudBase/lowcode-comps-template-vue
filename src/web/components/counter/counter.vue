@@ -24,10 +24,6 @@ export default {
         this.$emit('minus', this.count);
     }
   },
-  created() {
-      console.log('created', this);
-      window.$$counter = this;
-  },
   data() {
     return {
       count: this.init ?? 0,
