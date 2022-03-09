@@ -17,7 +17,7 @@
   "license": "MIT",
   "description": "腾讯云微搭低代码组件库模板",
   "dependencies": {
-    "@tcwd/vuera": "0.0.1",
+    "@tcwd/vuera": "0.0.2",
     "kbone-api": "^0.2.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -44,6 +44,7 @@
     "react-scripts": "4.0.3",
     "storybook": "^6.1.21",
     "vue-loader": "^15.9.8",
+    "css-loader": "5",
     "vue-template-compiler": "^2.6.14",
     "webpack": "4.44.2"
   }
