@@ -6,7 +6,9 @@
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "dev": "tcb lowcode debug",
+    "publish": "tcb lowcode publish"
   },
   "keywords": [
     "weda",
