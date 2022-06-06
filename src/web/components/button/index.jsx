@@ -1,9 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { Button as RawButton } from 'react-weui';
+import './index.css';
 import 'weui';
-import 'react-weui/build/packages/react-weui.css';
-import './index.less';
 
 export default function Button({
   text,
@@ -12,21 +10,22 @@ export default function Button({
   loading = false,
   disabled = false,
   plain = false,
+  className = '',
   events,
   ...props
 }) {
   return (
-    <RawButton
-      type={type}
-      size={size === 'mini' ? 'small' : 'normal'}
+    <button
+      className={`weui-btn weui-btn_${type} ${
+        size !== 'default' ? `weui-btn_${size}` : ''
+      } ${className}`}
       disabled={disabled}
-      plain={plain}
       onClick={events.customevent}
       {...props}
     >
       {loading && <i className="weui-loading" />}
       {text}
-    </RawButton>
+    </button>
   );
 }
 
@@ -63,6 +62,7 @@ Button.propTypes = {
    * 低码平台注入的事件触发器
    */
   events: PropTypes.objectOf(PropTypes.func),
+  className: PropTypes.string,
 };
 
 /**
