@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import './index.css';
-import 'weui';
 
 export default function Button({
   text,
@@ -9,7 +8,6 @@ export default function Button({
   type = 'primary',
   loading = false,
   disabled = false,
-  plain = false,
   className = '',
   events,
   ...props
