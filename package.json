@@ -20,7 +20,6 @@
   "description": "腾讯云微搭低代码组件库模板",
   "dependencies": {
     "@tcwd/vuera": "0.0.2",
-    "kbone-api": "^0.2.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "vue": "^2.6.14"
